@@ -11,7 +11,7 @@ class StoreProductRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,21 @@ class StoreProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'max:100', 'string'],
+            'description' => ['nullable', 'text'],
+            'price' => ['required', 'decimal'],
+            'stock' => ['required', 'integer'],
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Il Nome del prodotto é obbligatorio',
+            'name.max' => 'Hai inserito troppi caratteri',
+            'stock.integer' => 'Devi inserire un numero intero',
+            'stock.required' => 'Lo Stock del prodotto é obbligatorio',
+            'price.required' => 'Il Prezzo del prodotto é obbligatorio',
         ];
     }
 }

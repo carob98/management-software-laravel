@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header>
+    {{-- <header>
         <x-nav></x-nav>
-    </header>
+    </header> --}}
     <div class="container.fluid full-bg p-5">
         {{ $slot }}
     </div>
 
-    <x-footer></x-footer>
+    {{-- <x-footer></x-footer> --}}
 </body>
 
 </html>
