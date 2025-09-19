@@ -23,8 +23,8 @@ class UpdateProductRequest extends FormRequest
     {
         return [
             'name' => ['required', 'max:100', 'string'],
-            'description' => ['nullable', 'text'],
-            'price' => ['required', 'decimal'],
+            'description' => ['nullable', 'string'],
+            'price' => ['required', 'decimal:0,8'],
             'stock' => ['required', 'integer'],
         ];
     }
