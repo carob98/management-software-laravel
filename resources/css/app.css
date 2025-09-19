@@ -167,21 +167,14 @@ a.nav-link {
     transition: .4s;
     cursor: pointer;
     color: #272c35;
-    margin-bottom: 1rem;
     border-color: transparent;
     box-shadow: 0 .5rem 1rem rgba(106, 108, 255, 0.2);
 }
 
-.card h6 {
-    text-transform: uppercase;
-    font-size: .7161rem;
-    margin-bottom: .25rem;
-}
 
-.card:hover {
-    background-color: #6a6cff;
-    color: #ffffff;
-    transform: translateY(-10.5px);
+
+.card-img {
+    max-width: 40%;
 }
 
 table {
@@ -307,3 +300,15 @@ a.edit {
     font-size: 2rem;
     color: #8a8a93;
 }
+
+.truncate {
+    max-width: 150px;      
+    white-space: nowrap;   
+    overflow: hidden;      
+    text-overflow: ellipsis; 
+}
+
+.sub {
+    color: #8a8a93;
+}
+

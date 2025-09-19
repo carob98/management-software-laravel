@@ -1,4 +1,11 @@
 <x-layout>
+    @auth
+        <div class="mb-3">
+            <h3 class="fw-bold fs-4 mb-3">
+                Ciao, {{ Auth::user()->name }}
+            </h3>
+        </div>
+    @endauth
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-between my-3">
@@ -28,7 +35,7 @@
                             <tr>
                                 <th scope="row">{{ $product->id }}</th>
                                 <td>{{ $product->name }}</td>
-                                <td>{{ $product->description }}</td>
+                                <td class="truncate">{{ $product->description }}</td>
                                 <td>{{ $product->price }}</td>
                                 <td>{{ $product->stock }}</td>
                                 <td>

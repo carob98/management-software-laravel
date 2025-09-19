@@ -26,14 +26,7 @@
                 <x-nav></x-nav>
             @endif
             <main class="content px-3 py-4">
-                <div class="container-fluid">
-                    @auth
-                        <div class="mb-3">
-                            <h3 class="fw-bold fs-4 mb-3">
-                                Ciao, {{ Auth::user()->name }}
-                            </h3>
-                        </div>
-                    @endauth
+                <div class="container-fluid my-3">
                     {{ $slot }}
                 </div>
             </main>
