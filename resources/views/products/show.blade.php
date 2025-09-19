@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout crud="true">
     <section>
         <h3 class="fw-bold fs-4 mb-3">Prodotto: {{ $product->name }}</h3>
         <h6 class="sub mb-5">Ultimo aggiornamento: {{ $product->updated_at->format('d/m/Y') }} alle ore

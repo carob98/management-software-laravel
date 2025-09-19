@@ -19,8 +19,15 @@
             @if (@isset($homepage))
                 <x-nav align='justify-content-between'></x-nav>
             @elseif (@isset($authentication))
-                <x-nav align='justify-content-between'>
+                <x-nav align="justify-content-between">
                     <a href="{{ route('pages.homepage') }}"><i class='bx bx-arrow-left-stroke back-icon'></i></a>
+                </x-nav>
+            @elseif (@isset($crud))
+                <x-nav align="justify-content-between" width="w-100">
+                    <x-slot name="icon">
+                        <li class="nav-item"><a href="{{ route('products.index') }}"><i
+                                    class="bx bx-arrow-left-stroke back-icon"></i></a></li>
+                    </x-slot>
                 </x-nav>
             @else
                 <x-nav></x-nav>

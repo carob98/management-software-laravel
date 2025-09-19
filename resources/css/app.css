@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: unset;
     transition: all 0.25s ease-in-out;
     background-color: #f4f7fe;
 }
@@ -35,6 +35,11 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    height: 100vh; 
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    overflow-y: auto;
 }
 
 #sidebar.expand {
@@ -151,6 +156,9 @@ a.sidebar-link.active {
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 0 2rem 0 rgba(26, 28, 32, .08);
+    position: sticky;
+    top: 0;
+    overflow: unset;
 }
 
 .navbar-expand {

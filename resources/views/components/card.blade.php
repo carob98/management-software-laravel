@@ -3,7 +3,7 @@
         <div class="card p-3">
             <div class="card-body py-4 d-flex gap-5">
                 <img class="rounded card-img" src="/images/no_img.jpg" alt="Image">
-                <div class="d-flex flex-column col-6">
+                <div class="d-flex flex-column col-6 ms-2">
                     <div class="d-flex flex-row justify-content-between align-items-center gap-5">
                         <h4 class="mb-3 fw-bold">{{ $product->name }}</h4>
                         <div class="d-flex flex-row gap-2 align-items-baseline">
