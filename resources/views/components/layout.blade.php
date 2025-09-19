@@ -15,9 +15,16 @@
         @auth
             <x-sidebar></x-sidebar>
         @endauth
-        <!-- horizontal nav -->
         <div class="main">
-            <x-nav></x-nav>
+            @if (@isset($homepage))
+                <x-nav align='justify-content-between'></x-nav>
+            @elseif (@isset($authentication))
+                <x-nav align='justify-content-between'>
+                    <a href="{{ route('pages.homepage') }}"><i class='bx bx-arrow-left-stroke back-icon'></i></a>
+                </x-nav>
+            @else
+                <x-nav></x-nav>
+            @endif
             <main class="content px-3 py-4">
                 <div class="container-fluid">
                     @auth

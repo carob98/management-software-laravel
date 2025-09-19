@@ -1,9 +1,13 @@
-<nav class="navbar navbar-expand px-4 py-3">
-    {{-- @guest
-        <span class="nav-logo">
-            Gestionale
-        </span>
-    @endguest --}}
+<nav class="navbar navbar-expand {{ $align ?? 'justify-content-end' }} align-items-center px-4 py-3">
+    @guest
+        <div class="d-flex align-items-center justify-content-between w-50">
+            {{ $slot }}
+            <span class="nav-logo">
+                {{ env('APP_NAME') }}
+            </span>
+        </div>
+
+    @endguest
     <ul class="navbar-nav gap-2">
         @guest
             <li class="nav-item"><a class="nav-btn2" href="{{ route('register') }}">Registrati</a></li>

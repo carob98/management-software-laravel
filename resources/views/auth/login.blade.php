@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout authentication='true'>
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -10,8 +10,8 @@
                     <div class="mb-3">
                         <label for="email" class="form-label">Email
                             utente</label>
-                        <input type="email" name="email" class="form-control @error('email') is-invalid    @enderror"
-                            id="email" required>
+                        <input type="email" name="email"
+                            class="form-control @error('email') is-invalid    @enderror" id="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>

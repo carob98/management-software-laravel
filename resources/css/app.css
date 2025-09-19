@@ -156,7 +156,6 @@ a.sidebar-link.active {
 .navbar-expand {
     min-width: 200px;
     display: flex;
-    justify-content: end;
 }
 
 a.nav-link {
@@ -227,6 +226,7 @@ a.edit {
     background-color: #38cc80;
     border-radius: 10px;
     box-shadow: 0 .5rem 1rem rgba(106, 108, 255, 0.08);
+    width: fit-content;
 }
 
 .btn-add:hover {
@@ -250,6 +250,7 @@ a.edit {
     border-radius: 10px;
     padding: 8px 16px !important;
     box-shadow: 0 .5rem 1rem rgba(106, 108, 255, 0.08);
+    width: fit-content;
 }
 
 .nav-btn1:hover {
@@ -274,6 +275,7 @@ a.edit {
     border: 2px solid #6a6cff;
     padding: 8px 16px !important;
     box-shadow: 0 .5rem 1rem rgba(106, 108, 255, 0.08);
+    width: fit-content;
 }
 
 .nav-btn2:hover {
@@ -289,4 +291,19 @@ a.edit {
     font-size: 1.15rem;
     font-weight: 600;
     display: block;
+}
+
+.title {
+    color: #6a6cff;
+    text-transform: capitalize;
+}
+
+.img-hero {
+    max-width: 60%;
+    min-width: 60%;
+}
+
+.back-icon {
+    font-size: 2rem;
+    color: #8a8a93;
 }
