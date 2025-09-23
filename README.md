@@ -38,7 +38,11 @@ Or you can record a short demo GIF and place it in the `docs/` folder, for examp
 ---
 
 ## ⚙️ Installation
-1. Clone the repository  
+1. Clone the repository
+    ```bash
+   git clone https://github.com/carob98/management-software-laravel.git
+   cd management-software-laravel
+   ```
 
 2. Install dependencies
     ```bash
