@@ -54,7 +54,7 @@ Or you can record a short demo GIF and place it in the `docs/` folder, for examp
 
 4. Run migrations
     ```bash
-        php artisan migrate
+    php artisan migrate
     ```
 
 5. Start the development server
