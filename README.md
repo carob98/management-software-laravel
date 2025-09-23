@@ -12,19 +12,14 @@ It provides a secure platform where users can authenticate and manage business-r
 - Manage company products (create, read, update, delete)  
 - Responsive UI  
   
-<!--
 ---
 
 ## 🖼️ Demo
-Here’s a preview of the application:  
 
-![Movie Catalog Screenshot](docs/screenshot.png)  
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/c1789948-3422-46a8-a650-049c3fc02d84" alt="demo">
+</p>
 
-Or you can record a short demo GIF and place it in the `docs/` folder, for example:  
-
-![Movie Catalog Demo](docs/demo.gif)  
-
--->
 ---
 
 ## 🛠️ Tech Stack
