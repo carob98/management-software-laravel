@@ -29,9 +29,9 @@ Or you can record a short demo GIF and place it in the `docs/` folder, for examp
 
 ## 🛠️ Tech Stack
 <p align="center">
-  <a href="https://laravel.com/"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?logo=laravel&logoColor=white" /></a>
+  <a href="https://laravel.com/"><img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?logo=laravel&logoColor=white" /></a>
   <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-^8.4-777BB4?logo=php&logoColor=white" /></a>
-  <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white" /></a>
+  <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white" /></a>
   <a href="https://laravel.com/docs/fortify"><img src="https://img.shields.io/badge/Auth-Laravel%20Fortify-0A66C2" /></a>
 </p>
 
