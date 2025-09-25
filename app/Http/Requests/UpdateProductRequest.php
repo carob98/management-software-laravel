@@ -26,6 +26,7 @@ class UpdateProductRequest extends FormRequest
             'description' => ['nullable', 'string'],
             'price' => ['required', 'decimal:0,8'],
             'stock' => ['required', 'integer'],
+            'image' => ['nullable', 'mimes:jpg,jpeg,bmp,png,webp', 'max:2048'],
         ];
     }
 }

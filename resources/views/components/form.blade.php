@@ -5,7 +5,7 @@
 
     <x-errors-all></x-errors-all>
 
-    <form action="{{ route('products.store') }}" method="POST" class="m-5">
+    <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data" class="m-5">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Nome prodotto</label>
@@ -29,8 +29,6 @@
 
         </div>
 
-
-
         <div class="mb-3">
 
             <label for="stock" class="form-label">Quantità in Stock</label>
@@ -40,6 +38,15 @@
                 name="stock" value={{ old('stock') }}>
 
         </div>
+
+        <div class="mb-3">
+
+            <label for="image" class="form-label">Carica un'immagine del prodotto</label>
+            <input class="form-control @error('image') is-invalid @enderror" type="file" id="image"
+                name="image">
+
+        </div>
+
         <button type="submit" class="btn nav-btn1 mt-3">Salva</button>
     </form>
 </div>

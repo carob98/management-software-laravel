@@ -32,11 +32,18 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
 
+        $path_image = '';
+        if ($request->hasFile('image')) {
+            $file_name = $request->file('image')->getClientOriginalName();
+            $path_image = $request->file('image')->storeAs('images', $file_name, 'public');
+        }
+
         Product::create([
             'name' => $request->name,
             'description' => $request->description,
             'price' => $request->price,
             'stock' => $request->stock,
+            'image' => $path_image,
         ]);
 
         return redirect()->route('products.index')->with('success', 'Il prodotto é stato aggiunto con successo!');
@@ -63,11 +70,18 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, Product $product)
     {
+        $image = $product->image;
+        if ($request->hasFile('image')) {
+            $file_name = $request->file('image')->getClientOriginalName();
+            $image = $request->file('image')->storeAs('images', $file_name, 'public');
+        }
+
         $product->update([
             'name' => $request->name,
             'description' => $request->description,
             'price' => $request->price,
             'stock' => $request->stock,
+            'image' => $image,
         ]);
 
         return redirect()->route('products.index')->with('success', 'Il prodotto é stato modificato con successo!');

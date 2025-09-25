@@ -5,7 +5,8 @@
 
     <x-errors-all></x-errors-all>
 
-    <form action="{{ route('products.update', ['product' => $product]) }}" method="POST" class="m-5">
+    <form action="{{ route('products.update', ['product' => $product]) }}" method="POST" enctype="multipart/form-data"
+        class="m-5">
         @csrf
         @method('PUT')
         <div class="mb-3">
@@ -30,8 +31,6 @@
 
         </div>
 
-
-
         <div class="mb-3">
 
             <label for="stock" class="form-label">Quantità in Stock</label>
@@ -41,6 +40,18 @@
                 name="stock" value={{ $product->stock }}>
 
         </div>
+
+        <div class="mb-3">
+
+            <img class="mx-3 mb-3" width="100px"
+                src="{{ $product->image ? Storage::url($product->image) : '/images/no_img.jpg' }}"
+                alt="{{ $product->image ? $product->name : 'Nessuna immagine' }}">
+            <label for="image" class="form-label">Immagine del prodotto</label>
+            <input class="form-control @error('image') is-invalid @enderror" type="file" id="image"
+                name="image">
+
+        </div>
+
         <button type="submit" class="btn nav-btn1 mt-3">Salva modifiche</button>
     </form>
 </div>

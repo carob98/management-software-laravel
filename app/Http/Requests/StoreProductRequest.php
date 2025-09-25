@@ -26,6 +26,7 @@ class StoreProductRequest extends FormRequest
             'description' => ['nullable', 'string'],
             'price' => ['required', 'decimal:0,8'],
             'stock' => ['required', 'integer'],
+            'image' => ['nullable', 'mimes:jpg,jpeg,bmp,png,webp', 'max:2048'],
         ];
     }
 
@@ -37,6 +38,7 @@ class StoreProductRequest extends FormRequest
             'stock.integer' => 'Devi inserire un numero intero',
             'stock.required' => 'Lo Stock del prodotto é obbligatorio',
             'price.required' => 'Il Prezzo del prodotto é obbligatorio',
+            'image.max' => 'La dimensione massima dell\'immagine deve essere 2MB',
         ];
     }
 }
