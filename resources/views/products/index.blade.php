@@ -11,7 +11,7 @@
             <div class="d-flex justify-content-between my-3">
                 <h3 class="fw-bold fs-4">Prodotti</h3>
                 <a class="btn btn-add" href={{ route('products.create') }}>
-                    <i class="bx bx-plus"></i>
+                    <i class="bi bi-plus"></i>
                     Aggiungi prodotto
                 </a>
             </div>
@@ -41,21 +41,21 @@
                                 <td>
                                     <a href="{{ route('products.show', ['product' => $product]) }}"
                                         class="edit text-secondary">
-                                        <i class="bx bx-search"></i>
+                                        <i class="bi bi-search"></i>
                                         Mostra
                                     </a>
                                 </td>
                                 <td>
                                     <a href="{{ route('products.edit', ['product' => $product]) }}"
                                         class="edit text-success">
-                                        <i class="bx bx-pencil"></i>
+                                        <i class="bi bi-pencil"></i>
                                         Modifica
                                     </a>
                                 </td>
                                 <td>
                                     <a href="#" class="edit text-danger" data-bs-toggle="modal"
                                         data-bs-target="#product-{{ $product->id }}">
-                                        <i class="bx bx-trash"></i>
+                                        <i class="bi bi-trash"></i>
                                         Elimina
                                     </a>
 

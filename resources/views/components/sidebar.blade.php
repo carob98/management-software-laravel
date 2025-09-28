@@ -5,19 +5,19 @@
             <a href="#">Gestionale</a>
         </div>
         <button class="toggle-btn border-0" type="button">
-            <i id="icon" class="bx bx-menu"></i>
+            <i id="icon" class="bi bi-list"></i>
         </button>
     </div>
     <ul class="sidebar-nav">
         <li class="sidebar-item">
             <a href="{{ route('products.index') }}" class="sidebar-link active" aria-current="page">
-                <i class="bx bx-grid"></i>
+                <i class="bi bi-grid"></i>
                 <span>Prodotti</span>
             </a>
         </li>
         <li class="sidebar-item">
             <a href="{{ route('products.create') }}" class="sidebar-link">
-                <i class="bx bx-plus"></i>
+                <i class="bi bi-plus"></i>
                 <span>Aggiungi prodotto</span>
             </a>
         </li>
@@ -26,7 +26,7 @@
         <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button type="submit" class="sidebar-link p-4"><i
-                    class="bx bx-arrow-out-left-square-half"></i><span>Logout</span></button>
+                    class="bi bi-box-arrow-left"></i><span>Logout</span></button>
         </form>
     </div>
 </nav>
